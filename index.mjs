@@ -42,7 +42,8 @@ async function copyLatestShortcode(db) {
 
 open({
   filename: dbFilePath,
-  driver: sqlite3.Database
+  driver: sqlite3.Database,
+  mode: sqlite3.OPEN_READONLY
 }).then(async db => {
   console.log("watching", walFilePath);
   fs.watchFile(walFilePath, async (curr, prev) => {
