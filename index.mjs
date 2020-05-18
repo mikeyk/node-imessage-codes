@@ -50,4 +50,6 @@ open({
     console.log(`${walFilePath} file Changed`);
     await copyLatestShortcode(db);
   });
+}).catch((err) => {
+  console.error("Couldn't open DB file", dbFilePath, err);
 });
