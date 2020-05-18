@@ -1,0 +1,16 @@
+{
+  "name": "imessage-codes",
+  "version": "1.0.0",
+  "description": "Grab codes from incoming iMessages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Krieger",
+  "license": "ISC",
+  "dependencies": {
+    "node-notifier": "^7.0.0",
+    "sqlite": "^4.0.7",
+    "sqlite3": "^4.2.0"
+  }
+}
