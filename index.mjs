@@ -19,7 +19,6 @@ async function copyLatestShortcode(db) {
   for (var i = 0; i < rows.length; i++) {
     let row = rows[i];
     let match = SMS_RE.exec(row.text);
-    console.log(row.text);
     if (match) {
       let code = match[1];
       if (code === lastNotifiedCode) {
